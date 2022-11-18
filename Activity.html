@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app>
+            <p>Please enter your name</p>
+            <input type="text" ng-model="nameControl" placeholder="Name"><br>
+            <p>Enter your course</p>
+            <input type="text" ng-model="course" placeholder="Course">
+            <input type="text" ng-model="year" placeholder="Course">
+            <p>Enter a value</p>
+            <input type="number" ng-model="val1">
+            <p>Enter another value</p>
+            <input type="number" ng-model="val2">
+            <h3>Hi {{nameControl}}! from {{course + '-' + year}}</h3>
+            <h3>Your have acquired: {{val1 + val2 | currency:'PHP '}}</h3>
+        </div>
+    </body>
+</html>
